@@ -25,7 +25,6 @@ function Palette() {
     const [currentColor, setCurrentColor] = React.useState('');
 
 
-    //random texts
     const copyTexts = ['Copied!'];
 
 
@@ -89,8 +88,8 @@ function Palette() {
         setMyPalette({...myPalette, colors: []})
     }
 
-    const generateRandomText = () => {
-        return copyTexts[Math.floor(Math.random() * copyTexts.length)]
+    const generateCopyText = () => {
+        return copyTexts[0]
     }
 
     return (
@@ -149,7 +148,7 @@ function Palette() {
             </div>
             {currentColor && <div className="current-color" style={{backgroundColor: currentColor}}>
                 <div className="text">
-                    <h3>{generateRandomText()}</h3>
+                    <h3>{generateCopyText()}</h3>
                 </div>
             </div>
             }
