@@ -4,6 +4,7 @@ import bg2 from './grid.png';
 import Palettes from './components/Palettes'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Palette from "./components/Palette";
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Palettes />} />
           <Route path="/palette/:id" element={<Palette />} />
+          <Route path="/" element={<Profile/>}/>
         </Routes>
       </AppStyled>
     </BrowserRouter>

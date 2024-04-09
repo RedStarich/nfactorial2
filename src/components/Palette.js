@@ -66,11 +66,11 @@ function Palette() {
         if(!colorPickerColor) return
 
         const newColors = [...myPalette.colors]
-        if(newColors.length < 20){
+        if(newColors.length < 99){
             newColors.push(colorPickerColor)
             setMyPalette({...myPalette, colors: newColors})
         }else{
-            alert('You can only add 20 colors to a palette');
+            alert('You can only add 99 colors to a palette');
         }
     }
 
