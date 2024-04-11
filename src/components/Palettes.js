@@ -49,11 +49,11 @@ function Palettes() {
 
     }, []); 
 
-    //generate 20 random colors
+    //generate random colors
     const generateRandomColors = () => {
         const colors = []
 
-        while(colors.length < 20) {
+        while(colors.length < 5) {
             const color = chroma.random().hex();
             if(chroma.valid(color)){
                 colors.push(color)
