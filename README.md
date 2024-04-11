@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+Hosting:
+https://nfactorial2.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. download the file as zip
+2. extract all
+use npm install of the following dependencies:
+* react-router-dom
+* react-slugify
+* react-color
+* chroma-js
 
-## Available Scripts
+use npm start or npm run dev
 
-In the project directory, you can run:
+Веб-приложение позволяет составлять и редактировать цветовые палитры и делиться ими
+1. Чтобы выбрать палитру, выберите палитру на главном экране
+![image](https://github.com/RedStarich/nfactorial2/assets/66207321/d481d8dc-58f2-496c-9857-28edf2b938a3)
+2. Если хотите создать новую палитру, введите название новой палитры в textbox и нажмите на кнопку плюс
+3. Зайдя в любую из палитр, вы можете добавлять новый цвет с помощью синей кнопки палитры в правом верхнем углу
+![image](https://github.com/RedStarich/nfactorial2/assets/66207321/4d2798cc-b837-465e-be23-90c041a246ee)
+4. Чтобы удалить цвет, нажмите на кнопку корзины рядом со цветом
+5. Чтобы удалить все цвета, нажмите на красную кнопку сброса в правом верхнем углу
+6. Выбрать цвет можно с помощью палитры по RGB или по HEX коду, либо с помощью ползунка с контролем яркости, насыщенности и основной цветовой гаммы
+7. Чтобы поделиться цветом, нажмите на цвет и HEX код автоматически скопируется в буфер обмена (планируется добавить авторизацию с несколькими пользователями для передачи целой палитры вместо отдельных цветов)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+О разработке проекта
+Основным решением было выбор языка JavaScript в связи с его популярностью в веб разработке. Была диллема выбора между Python и JavaScript, поскольку я выполнял схожее задание во время прохождения курса Programming Principles 2 при КБТУ при разработке приложения "Paint" на pygame.
+![image](https://github.com/RedStarich/nfactorial2/assets/66207321/f13d00c3-ae32-4f0c-8bc4-d059837c81c5)
+Данная практика позволила мне определиться в использовании данного принципа при выборе цвета для этого проекта, так как эта функция намного user-friendly чем ручной выбор RGB, HEX, Hue, Saturation, etc.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+В первую очередь, я сосредоточился на создании основной страницы с палитрами, создав пробный JavaScript файл, хранящий заготовленные цвета. Особенности дизайна интерфейса были минимизированы в целях быстрого создания функционала.
+Также была предпринята попытка задеплоить проект на хостинге GitHub pages, ранее удавалось захостить другие проекты, но с данным проектом возникли сложности с Jekyll. Данную идею пришлось отложить.
+Также были предприняты действия создания авторизации, функция в процессе разработки. Планируется подключение через Supabase API с возможностью бесплатного хранения данных до 1000 пользователей и их данных. Каждому пользователю поставлен лимит в 99 цветов в палитре, но данный лимит можно увеличть в коде. В существует возможность добавить отдельную функцию для задавания лимита цветов для определенной палитры пользователями. Все хранязиеся данные о палитре перевести в формат таблицы SQL вместо файла JavaScript с данными.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Об уровне 1:
+Во время выполнения данного уровня больших трудностей не возникало, было решено сделать минималистический интерфейс с небольшими элементами дизайна (кнопок с иконками). Также, я отказался от использования базы данных в связи с возможными проблемами с подключением API, создании авторизации и т.д. и оставил это на будущее. Для создания сайта я пользовался помощью ChatGPT и опен-сорс проектов для поиска вдохновения и подсказок.
+Об уровне 2:
+Данный уровень не сильно был страшен, поскольку я уже реализовывал палитру во время курса университета, нужно лишь было адаптировать код и Python в JavaScript и связать выбор цвета с сайтом. Также, я решил улучшить палитру добавив возможность ручного выбора RGB и HEX, подсмотрев одно из решений на гитхабе.
+Об уровне 3:
+Данный уровень оказался сложным из-за необходимости добавления авторизации. Я посчитал что данный проект должен быть в формате "соц сети" для обмена палитрами. Также рассматривал отправку палитры в виде JSON файла, который содержит Dictionary палитр, но я посчитал что это было бы слишком сложно для пользователей без технического background-а. Поэтому, я решил отложить реализацию авторизации и временно заменить отправку цветов копируя HEX код цветов в буфер обмена при нажатии на цвет.
