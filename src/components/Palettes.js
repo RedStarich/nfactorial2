@@ -10,8 +10,6 @@ function Palettes() {
     const [myPalettes, setMyPalettes] = useState(palette)
     const [paletteName, setPaletteName] = React.useState('')
     const [lsPalettes, setLsPalettes] = useState([])
-    localStorage.clear();
-
 
     //add initial palettes to ls
     React.useEffect(() => {
