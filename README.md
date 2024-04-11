@@ -13,7 +13,8 @@ use npm start or npm run dev
 
 Веб-приложение позволяет составлять и редактировать цветовые палитры и делиться ими
 1. Чтобы выбрать палитру, выберите палитру на главном экране
-![image](https://github.com/RedStarich/nfactorial2/assets/66207321/d481d8dc-58f2-496c-9857-28edf2b938a3)
+![image](https://github.com/RedStarich/nfactorial2/assets/66207321/d82425c0-ba6f-4eac-b9b1-2fcaca87f4e6)
+
 2. Если хотите создать новую палитру, введите название новой палитры в textbox и нажмите на кнопку плюс
 3. Зайдя в любую из палитр, вы можете добавлять новый цвет с помощью синей кнопки палитры в правом верхнем углу
 ![image](https://github.com/RedStarich/nfactorial2/assets/66207321/4d2798cc-b837-465e-be23-90c041a246ee)
