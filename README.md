@@ -1,3 +1,6 @@
+Hosting:
+https://nfactorial2.vercel.app/
+
 1. download the file as zip
 2. extract all
 use npm install of the following dependencies:
