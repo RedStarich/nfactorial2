@@ -186,14 +186,14 @@ const PalettesStyled = styled.div`
                 font-size: 2rem;
                 height: 100%;
                 border-radius: 7px;
-                background-color: #7263F3;
+                background-color: lightblue;
                 color: white;
                 transition: all .3s ease;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 &:hover{
-                    background-color: #5A4ED1;
+                    background-color: blue;
                 }
             }
         }

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import bg from './bg.png';
-import bg2 from './grid.png';
 import Palettes from './components/Palettes'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Palette from "./components/Palette";
@@ -9,7 +8,7 @@ import Profile from './components/Profile';
 function App() {
   return (
     <BrowserRouter>
-      <AppStyled bg={bg} grid={bg2}>
+      <AppStyled bg={bg}>
         <div className="grid"></div>
         <Routes>
           <Route path="/" element={<Palettes />} />
